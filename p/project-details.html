@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Manav P. Prajapati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.1) 1px, transparent 0);
+            background-size: 30px 30px;
+         }
+        .tech-tag {
+            @apply px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded-md text-xs font-mono text-indigo-300;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased bg-grid">
+
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-xl z-50 border-b border-indigo-900/40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <a href="index.html" class="text-indigo-400 font-bold flex items-center gap-2 hover:text-indigo-300 transition">
+                <span>←</span> Back to Portfolio
+            </a>
+            <a href="https://drive.google.com/file/d/1jDuZ8OV27BPWtWf-kK7lFU8R-WCWjHQX/view?usp=sharing" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-lg text-sm font-bold transition shadow-lg shadow-indigo-500/20">
+                Download Resume (PDF)
+            </a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 px-6 text-center border-b border-white/5">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 text-white">Technical <span class="text-indigo-400">Case Studies</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto italic">A detailed look into my engineering workflow, from architectural modeling to physical implementation.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+
+        <section class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg" alt="FPGA Design" class="rounded-xl border border-white/10 mb-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">01. FPGA-Based Data Acquisition System</h2>
+                <p class="text-sm text-gray-500 mt-2">Oct 2025 – Present</p>
+              <div class="flex flex-wrap gap-2 mt-6">
+                   
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Verilog HDL</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Xilinx Vivado</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Ubuntu</span>
+
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Ongoing</p>
+            </div>
+
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Designing deterministic Verilog-based DAQ modules focused on reliable high-speed data transfer across multi-clock domains.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Implementing <span class="text-white">Clock-Domain Crossing (CDC)</span> and FIFO buffering to handle reliable multi-clock synchronization.</li>
+                    <li>Applying precise <span class="text-white">Vivado XDC constraints</span> to ensure timing closure on FPGA hardware targets.</li>
+                    <li>Analyzing setup/hold timing behavior to guarantee data integrity in high-frequency digital designs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <img src="https://etimg.etb2bimg.com/photo/92801781.cms" alt="ASIC Flow" class="rounded-xl border border-white/10 mb-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">02. 8-bit Subtractor: RTL to GDSII Flow</h2>
+                <p class="text-sm text-gray-500 mt-2">May 2025</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+                    
+	            <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Design Compiler</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Synopsys ICC2</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">STA</span>
+
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Executed a full ASIC flow for a digital subtractor, bridging the gap between hardware description and physical silicon layout using an industrial toolchain.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Architected the RTL using <span class="text-white">Verilog HDL</span>, focusing on optimized cell selection during synthesis.</li>
+                    <li>Performed logic synthesis, placement, and routing using <span class="text-white">Synopsys ICC2</span>.</li>
+                    <li>Conducted rigorous <span class="text-white">Static Timing Analysis (STA)</span> to optimize critical path delays and ensure positive timing slack.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <img src="https://saferide4kids.com/wp-content/uploads/2015/09/vehicle_safety1.jpg" alt="Vehicle Safety" class="rounded-xl border border-white/10 mb-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">03. Smart Vehicular Safety System</h2>
+                <p class="text-sm text-gray-500 mt-2">Nov 2025 – Present</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">ESP32</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">DNN-MLP</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">MQTT</span>
+
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Developed an inertial sensing-based safety framework for real-time monitoring of riding behavior and predictive crash prevention.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Integrated <span class="text-white">BNO055 IMU and GNSS/GSM</span> modules with ESP32 for high-precision telemetry collection.</li>
+                    <li>Built a <span class="text-white">Deep Neural Network (DNN-MLP)</span> model to predict and detect rash driving, overspeeding, and harsh braking.</li>
+                    <li>Established a cloud-based logging system via <span class="text-white">MQTT</span> for remote safety analytics and behavior assessment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" alt="Wireless Networking" class="rounded-xl border border-white/10 mb-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">04. MU-MIMO Smart Campus Network</h2>
+                <p class="text-sm text-gray-500 mt-2">Jan 2025 – June 2025</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">MATLAB</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">RF Modeling</span>
+                    <span class="px-3 py-1 bg-red-500/10 border border-white-500/30 rounded text-xs text-white-300">IEEE WAMS 2025</span>
+
+
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Awarded Winner at the <span class="text-white">IEEE WAMS Student Project Competition</span> and published in IEEE INDICON 2025 for wireless optimization.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Modeled spatial multiplexing and scheduling effects to optimize throughput in dense, high-interference user environments.</li>
+                    <li>Utilized <span class="text-white">Jain's Fairness Index</span> to evaluate system latency and fairness across varying user densities.</li>
+                    <li>Analyzed the correlation between antenna configurations and overall spectral efficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12 pb-24">
+            <div class="md:col-span-1">
+                <img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">05. UAV & IRS Assisted RF Sensing</h2>
+                <p class="text-sm text-gray-500 mt-2">July 2025 – Nov 2025</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Wavelet Processing</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Signal Extraction</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Doppler Analysis</span>
+
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Developed a non-contact vital sign detection system for disaster scenarios, receiving an Honorary Mention from <span class="text-white">IEEE ComSoc 2025</span>.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Simulated UAV and Intelligent Reflecting Surfaces (IRS) to detect critical heartbeat and respiration signals through obstacles.</li>
+                    <li>Applied <span class="text-white">multirate wavelet processing</span> to filter and extract vital signals from high-noise RF environments.</li>
+                    <li>Studied the impact of <span class="text-white">UAV mobility and Doppler effects</span> on the precision of biological signal extraction.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-12 pb-12">
+            <div class="md:col-span-1">
+                <img src="https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2025/04/risc_v_technology.png" alt="RISC-V Architecture" class="rounded-2xl border border-white/10 mb-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-indigo-400 sticky top-24">06. RISC-V Toolchain & Instruction Decoding</h2>
+                <p class="text-sm text-gray-500 mt-2">Oct 2025 – Nov 2025</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">C Programming</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Spike & pk</span>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 rounded text-xs text-indigo-300">Assembly</span>
+
+                </div>
+
+            </div>
+            <div class="md:col-span-2 space-y-6 text-gray-300 leading-relaxed pt-2">
+                <p>Establishing SoC foundations through low-level programming and architectural mapping.</p>
+                <ul class="list-disc ml-5 space-y-3">
+                    <li>Compiled C programs using <span class="text-white">RISC-V spike and pk</span> toolchains.</li>
+                    <li>Generated assembly mappings and manually decoded opcode, funct3, and funct7 fields.</li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="https://github.com/manav0515" class="hover:text-indigo-400 transition">GitHub</a>
+            <a href="mailto:manavpsp@gmail.com" class="hover:text-indigo-400 transition">Email</a>
+            <a href="index.html" class="hover:text-indigo-400 transition"">Back to Portfolio</a>
+        </div>
+        <p>© 2026 Manav P. Prajapati. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

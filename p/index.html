@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manav P. Prajapati | Hardware & VLSI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-grid {
+            background-image: radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.1) 1px, transparent 0);
+            background-size: 30px 30px;
+        }
+        .project-card:hover img { transform: scale(1.05); transition: all 0.5s ease; }
+        .footer-icon {
+            @apply w-10 h-10 flex items-center justify-center rounded-lg bg-zinc-900 border border-zinc-800 text-indigo-400 hover:bg-indigo-400 hover:text-black transition-all duration-300;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased bg-grid">
+
+    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-xl z-50 border-b border-indigo-900/40">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-black text-indigo-400 tracking-tighter">MP</h1>
+            <div class="flex items-center gap-6 text-xs font-bold tracking-widest uppercase">
+                <a href="#about" class="hover:text-indigo-400 transition">About</a>
+                <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+                <a href="#publications" class="hover:text-indigo-400 transition">Research</a>
+                <a href="https://drive.google.com/file/d/1jDuZ8OV27BPWtWf-kK7lFU8R-WCWjHQX/view?usp=sharing" target="_blank" class="text-indigo-400 border border-indigo-400/30 px-4 py-1.5 rounded-full hover:bg-indigo-400 hover:text-black transition">My Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-black via-slate-950 to-indigo-950/20">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
+            Manav P. <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Prajapati</span>
+        </h1>
+        <p class="text-xl md:text-2xl max-w-3xl text-gray-400 font-light leading-relaxed">
+            FPGA & ASIC Design Engineer | RTL to GDSII Flow | Timing-Critical Digital Systems
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+            <a href="#projects" class="px-8 py-3 bg-indigo-600 font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20">Explore Projects</a>
+            <a href="https://drive.google.com/file/d/1jDuZ8OV27BPWtWf-kK7lFU8R-WCWjHQX/view?usp=sharing" target="_blank" class="px-8 py-3 border border-indigo-500 text-indigo-400 font-bold rounded-lg hover:bg-indigo-500/10 transition-all">Download Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto border-t border-indigo-900/20">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-indigo-400 mb-6">About Me</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                    Electronics & Communication Engineering student at Pandit Deendayal Energy University (PDEU) with a CGPA of 9.23. I focus on the architectural design and physical implementation of semiconductors.
+                </p>
+                <p class="text-gray-400 mb-6">
+                    Skilled in RTL micro-architecture, Static Timing Analysis (STA), and Clock Domain Crossing (CDC) verification using industry-standard tools like Synopsys ICC2 and Vivado.
+                </p>
+                <p class="text-gray-500 italic border-l-2 border-indigo-500 pl-4">
+                    Combining the discipline of a former Baroda Cricket Association player and the endurance of an active distance runner with the precision of hardware engineering.
+                </p>
+            </div>
+            <div class="relative group">
+                <img src="https://strapi.blog.talentsprint.com/uploads/VLSI_chip_design_652a43b4f2.webp" alt="VLSI chip design visualization" class="rounded-2xl border border-indigo-500/20 shadow-2xl transition duration-500 group-hover:border-indigo-400/50">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 bg-slate-950/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center">Engineering <span class="text-indigo-400">Portfolio</span></h2>
+            
+            <div class="space-y-24">
+                
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                    <div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://etimg.etb2bimg.com/photo/92801781.cms" alt="ASIC flow visualization" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">8-bit Subtractor – RTL to GDSII Flow</h3>
+                        <ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+                            <li>Designed RTL architecture in Verilog HDL.</li>
+                            <li>Performed logic synthesis using Synopsys Design Compiler.</li>
+                            <li>Executed placement & routing in ICC2.</li>
+                            <li>Performed static timing analysis (STA) to analyze critical path delay.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                    <div class="md:order-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg" alt="FPGA development board" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div class="md:order-1 text-right md:text-left">
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">FPGA-Based Data Acquisition System</h3>
+                        <ul class="list-disc md:list-none md:text-right ml-5 md:ml-0 text-gray-400 space-y-2 mb-6">
+                            <li>Designing deterministic Verilog-based DAQ modules.</li>
+                            <li>Implementing FIFO-based clock domain crossing (CDC).</li>
+                            <li>Applying Vivado XDC timing constraints.</li>
+                            <li>Analyzing timing behavior in multi-clock digital designs.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                    <div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" alt="Wireless network equipment" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">MU-MIMO Smart Campus WiFi</h3>
+                        <ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+                            <li>Modeled MU-MIMO networks to study spatial multiplexing.</li>
+                            <li>Evaluated throughput & fairness using Jain’s Index.</li>
+                            <li>Winner of the IEEE WAMS Student Project Competition 2025.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                    <div class="md:order-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2025/04/risc_v_technology.png" alt="RISC-V architecture logo" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div class="md:order-1 text-right md:text-left">
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">RISC-V Toolchain & Decoding</h3>
+                        <ul class="list-disc md:list-none md:text-right ml-5 md:ml-0 text-gray-400 space-y-2 mb-6">
+                            <li>Compiled C programs using RISC-V spike and pk.</li>
+                            <li>Generated assembly and disassembly mappings.</li>
+                            <li>Manually decoded opcode and funct fields for SoC foundations.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                    <div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://saferide4kids.com/wp-content/uploads/2015/09/vehicle_safety1.jpg" alt="Vehicle safety system representation" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">Smart Vehicular Safety System</h3>
+                        <ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+                            <li>Integrated ESP32, BNO055 IMU and GNSS for real-time monitoring.</li>
+                            <li>Designed DNN-MLP predictive framework to detect rash driving.</li>
+                            <li>Implemented MQTT-based cloud telemetry for behavior assessment.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+                <div class="md:order-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+                        <img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg" alt="UAV RF Sensing" class="w-full grayscale hover:grayscale-0 transition duration-700">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-indigo-300">UAV & IRS Assisted RF Sensing</h3>
+                        <ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+                            <li>Modeled vital sign detection for disaster search operations.</li>
+                            <li>Applied wavelet processing for heartbeat extraction.</li>
+                            <li>Honorary Mention, IEEE ComSoc Student Competition 2025.</li>
+                        </ul>
+                        <a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 hover:text-white transition shadow-lg shadow-indigo-500/10">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="publications" class="py-24 px-6 border-t border-indigo-900/20">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-indigo-400 font-mono tracking-widest uppercase">Publications</h2>
+            <div class="space-y-10">
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-indigo-500/50 transition">
+                    <h3 class="text-xl font-bold text-gray-100 group-hover:text-indigo-300">Performance Analysis of an Optimum MU-MIMO Enabled Wi-Fi Network for Smart University Campus Applications</h3>
+                    <p class="text-gray-500 mt-2">Accepted for publication at <span class="text-white">IEEE INDICON 2025</span>.</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-indigo-500/50 transition">
+                    <h3 class="text-xl font-bold text-gray-100 group-hover:text-indigo-300">Inertial Sensing-based Smart Vehicular Safety System</h3>
+                    <p class="text-gray-500 mt-2">Currently <span class="text-white">Under Review</span> at IEEE IoT Journal.</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 group hover:border-indigo-500/50 transition">
+                    <h3 class="text-xl font-bold text-gray-100 group-hover:text-indigo-300">Enhancing Heartbeat Detection in Disaster Scenarios: Combining UAV and IRS Assisted 4D Radio Frequency Sensing with Multirate Wavelet Processing</h3>
+                    <p class="text-gray-500 mt-2">Proposed for <span class="text-white">IEEE WCNC Workshop 2026</span> (Under Review).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-slate-950/20 border-t border-indigo-900/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Achievements & Awards</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-white/5 rounded-xl border border-white/5 hover:border-indigo-500/40 transition">
+                    <h3 class="font-bold text-indigo-400 mb-2">Winner – IEEE WAMS 2025</h3>
+                    <p class="text-gray-500 text-sm">National-level Student Project Competition winner for MU-MIMO Smart Campus WiFi Network design.</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/5 hover:border-indigo-500/40 transition">
+                    <h3 class="font-bold text-indigo-400 mb-2">Samsung ISWDP Fellow</h3>
+                    <p class="text-gray-500 text-sm">Awarded 2nd Grade Fellowship for academic excellence and semiconductor performance.</p>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/5 hover:border-indigo-500/40 transition">
+                    <h3 class="font-bold text-indigo-400 mb-2">Honorary Mention – IEEE ComSoc 2025</h3>
+                    <p class="text-gray-500 text-sm">Recognized among the top 21 students globally for research in UAV and IRS Assisted RF Sensing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-zinc-950 pt-20 pb-10 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+            
+            <div class="col-span-1">
+                <div class="w-12 h-12 border-2 border-indigo-500 flex items-center justify-center mb-6 transform rotate-45">
+                    <span class="text-indigo-500 font-black text-xl -rotate-45">MP</span>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <a href="https://www.linkedin.com/in/manav-prajapati-6b45b7294" target="_blank" class="flex items-center gap-4 group">
+                    <div class="footer-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <span class="text-zinc-400 text-sm font-bold uppercase tracking-widest group-hover:text-indigo-400 transition">Linkedin</span>
+                </a>
+                <a href="https://github.com/manav0515" target="_blank" class="flex items-center gap-4 group">
+                    <div class="footer-icon"><i class="fa-brands fa-github"></i></div>
+                    <span class="text-zinc-400 text-sm font-bold uppercase tracking-widest group-hover:text-indigo-400 transition">Github</span>
+                </a>
+                <a href="https://drive.google.com/file/d/1jDuZ8OV27BPWtWf-kK7lFU8R-WCWjHQX/view?usp=sharing" target="_blank" class="flex items-center gap-4 group">
+                    <div class="footer-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <span class="text-zinc-400 text-sm font-bold uppercase tracking-widest group-hover:text-indigo-400 transition">Resume</span>
+                </a>
+                <a href="mailto:manavpsp@gmail.com" class="flex items-center gap-4 group">
+                    <div class="footer-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <span class="text-zinc-400 text-sm font-bold uppercase tracking-widest group-hover:text-indigo-400 transition">Email</span>
+                </a>
+            </div>
+
+            <div class="lg:col-start-4">
+                <h4 class="text-indigo-400 text-sm font-bold uppercase tracking-[0.2em] mb-8">Pages</h4>
+                <ul class="space-y-4 text-zinc-400 text-sm font-bold uppercase tracking-widest">
+                    <li><a href="#" class="hover:text-indigo-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
+                    <li><a href="project-details.html" class="hover:text-indigo-400 transition">Projects</a></li>
+                    <li><a href="#publications" class="hover:text-indigo-400 transition">Insights</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-400 transition">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto px-6 pt-10 border-t border-zinc-900 flex justify-between items-center">
+            <p class="text-zinc-500 text-sm font-bold">
+                © <span id="year"></span> Manav P. Prajapati | Built with Accuracy
+            </p>
+            <a href="#" class="flex items-center gap-3 text-zinc-500 hover:text-indigo-400 transition text-sm font-bold uppercase tracking-widest group">
+                To Top 
+                <div class="w-8 h-8 rounded-full border border-zinc-800 flex items-center justify-center group-hover:border-indigo-400">
+                    <i class="fa-solid fa-arrow-up text-xs"></i>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
